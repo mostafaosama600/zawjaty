@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>زوجتي</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"> زوجتي </a>
+      <div class="" style="display: flex; justify-content: space-between">
+        <div class="navbar-toggler">
+          <a class="navbar-brand nav-txt-login">تسجيل الدخول </a>
+        </div>
+        <div class="navbar-toggler">
+          <a class="navbar-brand nav-txt-login">انشاء حساب</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupsportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>
+              الرئيسية
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">
+              <i class="fas fa-search"></i>
+              البحث
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user-circle"></i>
+            </a>
+            <div class="dropdown-menu text-right">
+              <a class="dropdown-item" href="">الرسائل</a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalNotification"
+                href="javascript:void(0)"
+                >الاشعارات</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void(0)"
+                >تسجيل الخروج</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a>
+              <input type="checkbox" id="switch" name="mode" />
+              <label for="switch" class="mt-2 label"></label>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html">
+              <i class="fas fa-user-plus"></i>
+              تسجيل / دخول
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid section-intro-privecy">
+      <div class="row row-cols-1 row-cols-md-1 row-privecy">
+        <div class="col mb-4 text-right col-privecy">
+          <img src="imgs/trulove.svg" class="text-right" alt="purelove" />
+        </div>
+        <h3 class="card-title">تسجيل الدخول</h3>
+        <div class="brdr-text"></div>
+      </div>
+    </div>
+
+    <div class="container sigin-in-page mt-5 mb-5">
+      <form class="mt-5 mb-5 row row-cols-1 row-cols-md-1 text-right mr-1">
+        <div class="form-group form-g-sigin mb-4">
+          <label for="exampleInputEmail1">البريد الالكتروني</label>
+          <input
+            type="email"
+            class="form-control w-50"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group form-g-sigin">
+          <label for="exampleInputPassword1"> كلمه سر</label>
+          <input
+            type="password"
+            class="form-control w-50"
+            id="exampleInputPassword1"
+          />
+          <div class="mt-2">
+            <a
+              href=""
+              data-toggle="modal"
+              data-target="#exampleModalfrgtpass"
+              class="didufrgtpass"
+              >هل نسيت كلمه المرور ؟</a
+            >
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-2 text-right">
+          <div class="col mb-4" style="margin-right: -20px">
+            <div class="card">
+              <div class="card-body box-sign-login-res">
+                <a href="" type="submit" class="btn global-btn-1 w-25">
+                  دخول
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 text-right">
+            <div class="card text-right" style="margin-right: -20px">
+              <div class="card-body box-sign-login-res">
+                <a
+                  href="signin.html"
+                  type="submit"
+                  class="btn global-btn-1 w-25"
+                >
+                  او انشاء حساب
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-4 border-top border-bottom footer">
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title name-website">زوجتي</h5>
+              <p class="card-text about-us-text">
+                نرتقي بك لتكون الإستثناء الجميل وسط زحام المنافسين. بإبداعٍ ..
+              </p>
+              <ul class="social-media">
+                <li>
+                  <a href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://accounts.snapchat.com/"
+                    ><i class="fab fa-snapchat-ghost"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://web.whatsapp.com/"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                الدخول
+                <div class="brdr-text-footer-0"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="aboutzawjaty.html">من نحن ؟</a></li>
+              <li><a href="signin.html">دخول / تسجيل</a></li>
+              <li><a href="search.html">البحث المتقدم</a></li>
+              <li><a href="storylove.html">قصص ناجحة</a></li>
+              <li><a href="articles.html">المقالات</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                البحث المتقدم
+                <div class="brdr-text-footer"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="policy.html">سياسة الخصوصية</a></li>
+              <li><a href="contactus.html">تحتاج مساعدة ؟</a></li>
+              <li><a href="onlinenow.html">المتواجدين الأن</a></li>
+              <li><a href="newwoman.html">جديد الإناث المسجلين</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                روابط سريعة
+                <div class="brdr-text-footer-2"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="newmen.html">جديد الذكور المسجلين</a></li>
+              <li><a href="msyarwoman.html">نساء يطلبن زواج المسيار</a></li>
+              <li><a href="polygamywoman.html">نساء يطلبن زواج التعدد</a></li>
+              <li><a href="normalmarriage.html">زواج عادي</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 copy-footer">
+        <div class="col box-right">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li><img src="imgs/master.png" alt="master" /></li>
+                <li><img src="imgs/visa.png" alt="visa" /></li>
+                <li>
+                  <img src="imgs/paypal.png" class="paypal" alt="paypal" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col box-left">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                جميع الحقوق محفوظة للافانا &copy; 2022
+                <img src="imgs/paypal.png" width="60" alt="paypal" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div
+      class="modal fade"
+      id="exampleModalfrgtpass"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="text-right">
+              <div class="form-group">
+                <label for="exampleInputEmail1">البريد الالكتروني</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </form>
+            <div class="mt-5">
+              <form class="form-create-new-pass">
+                <input type="tel" class="ifufrgtpass" maxlength="1" />
+                <input type="tel" class="ifufrgtpass" maxlength="1" />
+                <input type="tel" class="ifufrgtpass" maxlength="1" />
+                <input type="tel" class="ifufrgtpass" maxlength="1" />
+              </form>
+            </div>
+          </div>
+          <div class="text-right m-4">
+            <a href="" class="text-dark" style="text-decoration: underline"
+              >اعاده ارسال الكود</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn global-btn-1">ارسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="onair-theme">
+      <div class="onair-content">
+        <input type="checkbox" id="switch" name="mode" />
+        <label for="switch" class="mt-2 label"></label>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Dark & Light Mode
+    var checkbox = document.querySelector("input[name=mode]");
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        trans();
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        trans();
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    });
+
+    let trans = () => {
+      document.documentElement.classList.add("transition");
+      window.setTimeout(() => {
+        document.documentElement.classList.remove("transition");
+      }, 1000);
+    };
+  </script>
+
+  <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,26 @@
+@use '../variables/color';
+@use '../variables/btns';
+/*! handling Favuser*/
+.box-fav-card-user{
+    background: var(n-e-w-bg-1);
+    border: 1px solid var(--n-e-w-brdr);
+    .box-fav-user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--n-e-w-color);
+    }
+}
+.favuser-happys{
+    color: var(--n-e-w-color) !important;
+}
+.ndnd-q{
+    font-weight: bold;
+    color: var(--n-e-w-color-1) !important;
+}
+.overscroll-for-settings{
+    overflow: auto;
+    height: 350px !important;
+    background: var(--n-e-w-bg-2);
+
+}

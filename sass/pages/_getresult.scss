@@ -1,0 +1,13 @@
+@use '../variables/color';
+@use '../variables/btns';
+.pagination {
+    margin-right: 15px;
+    .page-item {
+        border: 0px;
+        background: var(--n-e-w-bg-3) !important;
+    }
+    .page-link {
+        color: var(--n-e-w-color-1);
+        background: var(--n-e-w-bg-3) !important;
+    }
+}

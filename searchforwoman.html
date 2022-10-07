@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>زوجتي</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"> زوجتي </a>
+      <div style="display: flex; justify-content: space-between">
+        <div class="dropdown navbar-toggler ml-5">
+          <a class="dropdown-toggle navbar-brand" data-toggle="dropdown">
+            <i class="fas fa-user-circle"></i>
+          </a>
+          <div class="dropdown-menu text-right">
+            <a class="dropdown-item" href="">الرسائل</a>
+            <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item"
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModalNotification"
+              href="javascript:void(0)"
+              >الاشعارات</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="">تسجيل الخروج</a>
+          </div>
+        </div>
+
+        <button class="btn-slid navbar-brand" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupsportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>
+              الرئيسية
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">
+              <i class="fas fa-search"></i>
+              البحث
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user-circle"></i>
+            </a>
+            <div class="dropdown-menu text-right">
+              <a class="dropdown-item" href="">الرسائل</a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalNotification"
+                href="javascript:void(0)"
+                >الاشعارات</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void(0)"
+                >تسجيل الخروج</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a>
+              <input type="checkbox" id="switch" name="mode" />
+              <label for="switch" class="mt-2 label"></label>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html">
+              <i class="fas fa-user-plus"></i>
+              تسجيل / دخول
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="slidbar-menu slider-navs">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-edit"></i>
+            تعديل بياناتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-camera"></i>
+            الصورة الشخصية
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-share-alt"></i>
+            وسائل التواصل خارج الموقع
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upgrade.html">
+            <i class="fas ml-2 fa-money-check-alt"></i>
+            ترقية عضويتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favusers.html">
+            <i class="fas ml-2 fa-heart"></i>
+            الأعضاء المعجب بهم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="userslikesme.html">
+            <i class="fas ml-2 fa-grin-hearts"></i>
+            الأعضاء المعجبين بصفحتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usersvisitme.html">
+            <i class="fas ml-2 fa-eye"></i>
+            اعضاء زارو صفحتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ban.html">
+            <i class="fas ml-2 fa-ban"></i>
+            الأعضاء المحجوبين
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-dove"></i>
+            سجل قصتي الناجحة
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid section-intro-privecy">
+      <div class="row row-cols-1 row-cols-md-1 row-privecy">
+        <div class="col mb-4 text-right col-privecy">
+          <img src="imgs/trulove.svg" class="text-right" alt="purelove" />
+        </div>
+        <h3 class="card-title">ابحث عن نساء</h3>
+        <div class="brdr-text"></div>
+      </div>
+    </div>
+
+    <div class="container mt-4 search-for-man">
+      <div class="text-right">
+        <h5>
+          <i class="fas fa-search"></i>
+          البحث التفصيلي عن أنثى
+          <div class="brdr-text-footer-4"></div>
+        </h5>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-2 mt-5 p-3">
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <form class="row row-cols-1 row-cols-md-3 row-in-row-2">
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">مقيم في</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">السعودية</option>
+                    <option value="2">الإمارات</option>
+                    <option value="3">الكويت</option>
+                    <option value="4">قطر</option>
+                    <option value="5">البحرين</option>
+                    <option value="6">عمان</option>
+                    <option value="7">اليمن</option>
+                    <option value="8">الأردن</option>
+                    <option value="9">سورية</option>
+                    <option value="10">لبنان</option>
+                    <option value="11">فلسطين</option>
+                    <option value="12">مصر</option>
+                    <option value="13">العراق</option>
+                    <option value="14">المغرب</option>
+                    <option value="15">الجزائر</option>
+                    <option value="16">تونس</option>
+                    <option value="17">ليبيا</option>
+                    <option value="18">السودان</option>
+                    <option value="19">الصومال</option>
+                    <option value="46">غير ذلك</option>
+                    <option value="47">غير ذلك</option>
+                    <option value="48">Afghanistan</option>
+                    <option value="49">Albania</option>
+                    <option value="50">Antarctica</option>
+                    <option value="51">American Samoa</option>
+                    <option value="52">Andorra</option>
+                    <option value="53">Angola</option>
+                    <option value="54">Antigua and Barbuda</option>
+                    <option value="55">Azerbaijan</option>
+                    <option value="56">Argentina</option>
+                    <option value="57">Australia</option>
+                    <option value="58">Austria</option>
+                    <option value="59">Bahamas</option>
+                    <option value="60">Bangladesh</option>
+                    <option value="61">Armenia</option>
+                    <option value="62">Barbados</option>
+                    <option value="63">Belgium</option>
+                    <option value="64">Bermuda</option>
+                    <option value="65">Bhutan</option>
+                    <option value="66">Bolivia</option>
+                    <option value="67">Bosnia and Herzegovina</option>
+                    <option value="68">Botswana</option>
+                    <option value="69">Bouvet Island</option>
+                    <option value="70">Brazil</option>
+                    <option value="71">Belize</option>
+                    <option value="72">British Indian</option>
+                    <option value="73">Solomon Islands</option>
+                    <option value="74">Virgin Islands</option>
+                    <option value="75">Brunei Darussalam</option>
+                    <option value="76">Bulgaria</option>
+                    <option value="77">Myanmar</option>
+                    <option value="78">Burundi</option>
+                    <option value="79">Belarus</option>
+                    <option value="80">Cambodia</option>
+                    <option value="81">Cameroon</option>
+                    <option value="82">Canada</option>
+                    <option value="83">Cabo Verde</option>
+                    <option value="84">Cayman Islands</option>
+                    <option value="85">Central African</option>
+                    <option value="86">Sri Lanka</option>
+                    <option value="87">Chad</option>
+                    <option value="88">Chile</option>
+                    <option value="89">China</option>
+                    <option value="90">Taiwan</option>
+                    <option value="91">Christmas Island</option>
+                    <option value="92">Cocos Islands</option>
+                    <option value="93">Colombia</option>
+                    <option value="94">Comoros</option>
+                    <option value="95">Mayotte</option>
+                    <option value="96">Congo</option>
+                    <option value="97">Congo (Democrati)</option>
+                    <option value="98">Cook Islands</option>
+                    <option value="99">Costa Rica</option>
+                    <option value="100">Croatia</option>
+                    <option value="101">Cuba</option>
+                    <option value="102">Cyprus</option>
+                    <option value="103">Czechia</option>
+                    <option value="104">Benin</option>
+                    <option value="105">Denmark</option>
+                    <option value="106">Dominica</option>
+                    <option value="107">Dominican Republic</option>
+                    <option value="108">Ecuador</option>
+                    <option value="109">El Salvador</option>
+                    <option value="110">Equatorial Guinea</option>
+                    <option value="111">Ethiopia</option>
+                    <option value="112">Eritrea</option>
+                    <option value="113">Estonia</option>
+                    <option value="114">Faroe Islands</option>
+                    <option value="115">Falkland -Malvinas</option>
+                    <option value="116">South Georgia</option>
+                    <option value="117">Fiji</option>
+                    <option value="118">Finland</option>
+                    <option value="119">Åland Islands</option>
+                    <option value="120">France</option>
+                    <option value="121">French Guiana</option>
+                    <option value="122">French Polynesia</option>
+                    <option value="123">French Southern</option>
+                    <option value="124">Djibouti</option>
+                    <option value="125">Gabon</option>
+                    <option value="126">Georgia</option>
+                    <option value="127">Gambia</option>
+                    <option value="128">Germany</option>
+                    <option value="129">Ghana</option>
+                    <option value="130">Gibraltar</option>
+                    <option value="131">Kiribati</option>
+                    <option value="132">Greece</option>
+                    <option value="133">Greenland</option>
+                    <option value="134">Grenada</option>
+                    <option value="135">Guadeloupe</option>
+                    <option value="136">Guam</option>
+                    <option value="137">Guatemala</option>
+                    <option value="138">Guinea</option>
+                    <option value="139">Guyana</option>
+                    <option value="140">Haiti</option>
+                    <option value="141">Heard Island</option>
+                    <option value="142">Holy See</option>
+                    <option value="143">Honduras</option>
+                    <option value="144">Hong Kong</option>
+                    <option value="145">Hungary</option>
+                    <option value="146">Iceland</option>
+                    <option value="147">India</option>
+                    <option value="148">Indonesia</option>
+                    <option value="149">Iran</option>
+                    <option value="150">Ireland</option>
+                    <option value="152">Italy</option>
+                    <option value="153">Jamaica</option>
+                    <option value="154">Japan</option>
+                    <option value="155">Kazakhstan</option>
+                    <option value="156">Kenya</option>
+                    <option value="157">Korea</option>
+                    <option value="158">Kyrgyzstan</option>
+                    <option value="159">Lesotho</option>
+                    <option value="160">Latvia</option>
+                    <option value="161">Liberia</option>
+                    <option value="162">Liechtenstein</option>
+                    <option value="163">Lithuania</option>
+                    <option value="164">Luxembourg</option>
+                    <option value="165">Macao</option>
+                    <option value="166">Madagascar</option>
+                    <option value="167">Malawi</option>
+                    <option value="168">Malaysia</option>
+                    <option value="169">Maldives</option>
+                    <option value="170">Mali</option>
+                    <option value="171">Malta</option>
+                    <option value="172">Martinique</option>
+                    <option value="173">Mauritania</option>
+                    <option value="174">Mauritius</option>
+                    <option value="175">Mexico</option>
+                    <option value="176">Monaco</option>
+                    <option value="177">Mongolia</option>
+                    <option value="178">Moldova</option>
+                    <option value="179">Montenegro</option>
+                    <option value="180">Montserrat</option>
+                    <option value="181">Mozambique</option>
+                    <option value="182">Namibia</option>
+                    <option value="183">Nauru</option>
+                    <option value="184">Nepal</option>
+                    <option value="185">Netherlands</option>
+                    <option value="186">Curaçao</option>
+                    <option value="187">Aruba</option>
+                    <option value="188">Sint Maarten</option>
+                    <option value="189">Bonaire</option>
+                    <option value="190">New Caledonia</option>
+                    <option value="191">Vanuatu</option>
+                    <option value="192">New Zealand</option>
+                    <option value="193">Nicaragua</option>
+                    <option value="194">Niger</option>
+                    <option value="195">Nigeria</option>
+                    <option value="196">Niue</option>
+                    <option value="197">Norfolk Island</option>
+                    <option value="198">Norway</option>
+                    <option value="199">Northern Mariana Islands</option>
+                    <option value="200">United States Minor</option>
+                    <option value="201">Micronesia</option>
+                    <option value="202">Marshall Islands</option>
+                    <option value="203">Palau</option>
+                    <option value="204">Pakistan</option>
+                    <option value="205">Panama</option>
+                    <option value="206">Papua New Guinea</option>
+                    <option value="207">Paraguay</option>
+                    <option value="208">Peru</option>
+                    <option value="209">Philippines</option>
+                    <option value="210">Pitcairn</option>
+                    <option value="211">Poland</option>
+                    <option value="212">Portugal</option>
+                    <option value="213">Guinea-Bissau</option>
+                    <option value="214">Timor-Leste</option>
+                    <option value="215">Puerto Rico</option>
+                    <option value="216">Réunion</option>
+                    <option value="217">Romania</option>
+                    <option value="218">Russian Federation</option>
+                    <option value="219">Rwanda</option>
+                    <option value="220">Saint Barthélemy</option>
+                    <option value="221">Saint Helena</option>
+                    <option value="222">Saint Kitts and Nevis</option>
+                    <option value="223">Anguilla</option>
+                    <option value="224">Saint Lucia</option>
+                    <option value="225">Saint Martin (French)</option>
+                    <option value="226">Saint Pierre and Miquelon</option>
+                    <option value="227">Saint Vincen</option>
+                    <option value="228">San Marino</option>
+                    <option value="229">Sao Tome and Principe</option>
+                    <option value="230">Senegal</option>
+                    <option value="231">Serbia</option>
+                    <option value="232">Seychelles</option>
+                    <option value="233">Sierra Leone</option>
+                    <option value="234">Singapore</option>
+                    <option value="235">Slovakia</option>
+                    <option value="236">Viet Nam</option>
+                    <option value="237">Slovenia</option>
+                    <option value="238">South Africa</option>
+                    <option value="239">Zimbabwe</option>
+                    <option value="240">Spain</option>
+                    <option value="241">South Sudan</option>
+                    <option value="242">Western Sahara</option>
+                    <option value="243">Suriname</option>
+                    <option value="244">Svalbard and Jan</option>
+                    <option value="245">Swaziland</option>
+                    <option value="246">Sweden</option>
+                    <option value="247">Switzerland</option>
+                    <option value="248">Tajikistan</option>
+                    <option value="249">Thailand</option>
+                    <option value="250">Togo</option>
+                    <option value="251">Tokelau</option>
+                    <option value="252">Tonga</option>
+                    <option value="253">Trinidad and Tobago</option>
+                    <option value="254">Turkey</option>
+                    <option value="255">Turkmenistan</option>
+                    <option value="256">Turks and Caicos Islands</option>
+                    <option value="257">Tuvalu</option>
+                    <option value="258">Uganda</option>
+                    <option value="259">Ukraine</option>
+                    <option value="260">Macedonia</option>
+                    <option value="261">بريطانيا</option>
+                    <option value="262">Guernsey</option>
+                    <option value="263">Jersey</option>
+                    <option value="264">Isle of Man</option>
+                    <option value="265">Tanzania</option>
+                    <option value="266">United States</option>
+                    <option value="267">Virgin Islands</option>
+                    <option value="268">Burkina Faso</option>
+                    <option value="269">Uruguay</option>
+                    <option value="270">Uzbekistan</option>
+                    <option value="271">Venezuela</option>
+                    <option value="272">Wallis and Futuna</option>
+                    <option value="273">Samoa</option>
+                    <option value="274">Zambia</option>
+                    <option value="275">Côte d'Ivoire</option>
+                    <option value="276">Korea North Korea</option>
+                    <option value="277">Lao</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">المدينة</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>الكل</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الجنسية</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">السعودية</option>
+                    <option value="2">الإمارات</option>
+                    <option value="3">الكويت</option>
+                    <option value="4">قطر</option>
+                    <option value="5">البحرين</option>
+                    <option value="6">عمان</option>
+                    <option value="7">اليمن</option>
+                    <option value="8">الأردن</option>
+                    <option value="9">سورية</option>
+                    <option value="10">لبنان</option>
+                    <option value="11">فلسطين</option>
+                    <option value="12">مصر</option>
+                    <option value="13">العراق</option>
+                    <option value="14">المغرب</option>
+                    <option value="15">الجزائر</option>
+                    <option value="16">تونس</option>
+                    <option value="17">ليبيا</option>
+                    <option value="18">السودان</option>
+                    <option value="19">الصومال</option>
+                    <option value="46">غير ذلك</option>
+                    <option value="47">غير ذلك</option>
+                    <option value="48">Afghanistan</option>
+                    <option value="49">Albania</option>
+                    <option value="50">Antarctica</option>
+                    <option value="51">American Samoa</option>
+                    <option value="52">Andorra</option>
+                    <option value="53">Angola</option>
+                    <option value="54">Antigua and Barbuda</option>
+                    <option value="55">Azerbaijan</option>
+                    <option value="56">Argentina</option>
+                    <option value="57">Australia</option>
+                    <option value="58">Austria</option>
+                    <option value="59">Bahamas</option>
+                    <option value="60">Bangladesh</option>
+                    <option value="61">Armenia</option>
+                    <option value="62">Barbados</option>
+                    <option value="63">Belgium</option>
+                    <option value="64">Bermuda</option>
+                    <option value="65">Bhutan</option>
+                    <option value="66">Bolivia</option>
+                    <option value="67">Bosnia and Herzegovina</option>
+                    <option value="68">Botswana</option>
+                    <option value="69">Bouvet Island</option>
+                    <option value="70">Brazil</option>
+                    <option value="71">Belize</option>
+                    <option value="72">British Indian</option>
+                    <option value="73">Solomon Islands</option>
+                    <option value="74">Virgin Islands</option>
+                    <option value="75">Brunei Darussalam</option>
+                    <option value="76">Bulgaria</option>
+                    <option value="77">Myanmar</option>
+                    <option value="78">Burundi</option>
+                    <option value="79">Belarus</option>
+                    <option value="80">Cambodia</option>
+                    <option value="81">Cameroon</option>
+                    <option value="82">Canada</option>
+                    <option value="83">Cabo Verde</option>
+                    <option value="84">Cayman Islands</option>
+                    <option value="85">Central African</option>
+                    <option value="86">Sri Lanka</option>
+                    <option value="87">Chad</option>
+                    <option value="88">Chile</option>
+                    <option value="89">China</option>
+                    <option value="90">Taiwan</option>
+                    <option value="91">Christmas Island</option>
+                    <option value="92">Cocos Islands</option>
+                    <option value="93">Colombia</option>
+                    <option value="94">Comoros</option>
+                    <option value="95">Mayotte</option>
+                    <option value="96">Congo</option>
+                    <option value="97">Congo (Democrati)</option>
+                    <option value="98">Cook Islands</option>
+                    <option value="99">Costa Rica</option>
+                    <option value="100">Croatia</option>
+                    <option value="101">Cuba</option>
+                    <option value="102">Cyprus</option>
+                    <option value="103">Czechia</option>
+                    <option value="104">Benin</option>
+                    <option value="105">Denmark</option>
+                    <option value="106">Dominica</option>
+                    <option value="107">Dominican Republic</option>
+                    <option value="108">Ecuador</option>
+                    <option value="109">El Salvador</option>
+                    <option value="110">Equatorial Guinea</option>
+                    <option value="111">Ethiopia</option>
+                    <option value="112">Eritrea</option>
+                    <option value="113">Estonia</option>
+                    <option value="114">Faroe Islands</option>
+                    <option value="115">Falkland -Malvinas</option>
+                    <option value="116">South Georgia</option>
+                    <option value="117">Fiji</option>
+                    <option value="118">Finland</option>
+                    <option value="119">Åland Islands</option>
+                    <option value="120">France</option>
+                    <option value="121">French Guiana</option>
+                    <option value="122">French Polynesia</option>
+                    <option value="123">French Southern</option>
+                    <option value="124">Djibouti</option>
+                    <option value="125">Gabon</option>
+                    <option value="126">Georgia</option>
+                    <option value="127">Gambia</option>
+                    <option value="128">Germany</option>
+                    <option value="129">Ghana</option>
+                    <option value="130">Gibraltar</option>
+                    <option value="131">Kiribati</option>
+                    <option value="132">Greece</option>
+                    <option value="133">Greenland</option>
+                    <option value="134">Grenada</option>
+                    <option value="135">Guadeloupe</option>
+                    <option value="136">Guam</option>
+                    <option value="137">Guatemala</option>
+                    <option value="138">Guinea</option>
+                    <option value="139">Guyana</option>
+                    <option value="140">Haiti</option>
+                    <option value="141">Heard Island</option>
+                    <option value="142">Holy See</option>
+                    <option value="143">Honduras</option>
+                    <option value="144">Hong Kong</option>
+                    <option value="145">Hungary</option>
+                    <option value="146">Iceland</option>
+                    <option value="147">India</option>
+                    <option value="148">Indonesia</option>
+                    <option value="149">Iran</option>
+                    <option value="150">Ireland</option>
+                    <option value="152">Italy</option>
+                    <option value="153">Jamaica</option>
+                    <option value="154">Japan</option>
+                    <option value="155">Kazakhstan</option>
+                    <option value="156">Kenya</option>
+                    <option value="157">Korea</option>
+                    <option value="158">Kyrgyzstan</option>
+                    <option value="159">Lesotho</option>
+                    <option value="160">Latvia</option>
+                    <option value="161">Liberia</option>
+                    <option value="162">Liechtenstein</option>
+                    <option value="163">Lithuania</option>
+                    <option value="164">Luxembourg</option>
+                    <option value="165">Macao</option>
+                    <option value="166">Madagascar</option>
+                    <option value="167">Malawi</option>
+                    <option value="168">Malaysia</option>
+                    <option value="169">Maldives</option>
+                    <option value="170">Mali</option>
+                    <option value="171">Malta</option>
+                    <option value="172">Martinique</option>
+                    <option value="173">Mauritania</option>
+                    <option value="174">Mauritius</option>
+                    <option value="175">Mexico</option>
+                    <option value="176">Monaco</option>
+                    <option value="177">Mongolia</option>
+                    <option value="178">Moldova</option>
+                    <option value="179">Montenegro</option>
+                    <option value="180">Montserrat</option>
+                    <option value="181">Mozambique</option>
+                    <option value="182">Namibia</option>
+                    <option value="183">Nauru</option>
+                    <option value="184">Nepal</option>
+                    <option value="185">Netherlands</option>
+                    <option value="186">Curaçao</option>
+                    <option value="187">Aruba</option>
+                    <option value="188">Sint Maarten</option>
+                    <option value="189">Bonaire</option>
+                    <option value="190">New Caledonia</option>
+                    <option value="191">Vanuatu</option>
+                    <option value="192">New Zealand</option>
+                    <option value="193">Nicaragua</option>
+                    <option value="194">Niger</option>
+                    <option value="195">Nigeria</option>
+                    <option value="196">Niue</option>
+                    <option value="197">Norfolk Island</option>
+                    <option value="198">Norway</option>
+                    <option value="199">Northern Mariana Islands</option>
+                    <option value="200">United States Minor</option>
+                    <option value="201">Micronesia</option>
+                    <option value="202">Marshall Islands</option>
+                    <option value="203">Palau</option>
+                    <option value="204">Pakistan</option>
+                    <option value="205">Panama</option>
+                    <option value="206">Papua New Guinea</option>
+                    <option value="207">Paraguay</option>
+                    <option value="208">Peru</option>
+                    <option value="209">Philippines</option>
+                    <option value="210">Pitcairn</option>
+                    <option value="211">Poland</option>
+                    <option value="212">Portugal</option>
+                    <option value="213">Guinea-Bissau</option>
+                    <option value="214">Timor-Leste</option>
+                    <option value="215">Puerto Rico</option>
+                    <option value="216">Réunion</option>
+                    <option value="217">Romania</option>
+                    <option value="218">Russian Federation</option>
+                    <option value="219">Rwanda</option>
+                    <option value="220">Saint Barthélemy</option>
+                    <option value="221">Saint Helena</option>
+                    <option value="222">Saint Kitts and Nevis</option>
+                    <option value="223">Anguilla</option>
+                    <option value="224">Saint Lucia</option>
+                    <option value="225">Saint Martin (French)</option>
+                    <option value="226">Saint Pierre and Miquelon</option>
+                    <option value="227">Saint Vincen</option>
+                    <option value="228">San Marino</option>
+                    <option value="229">Sao Tome and Principe</option>
+                    <option value="230">Senegal</option>
+                    <option value="231">Serbia</option>
+                    <option value="232">Seychelles</option>
+                    <option value="233">Sierra Leone</option>
+                    <option value="234">Singapore</option>
+                    <option value="235">Slovakia</option>
+                    <option value="236">Viet Nam</option>
+                    <option value="237">Slovenia</option>
+                    <option value="238">South Africa</option>
+                    <option value="239">Zimbabwe</option>
+                    <option value="240">Spain</option>
+                    <option value="241">South Sudan</option>
+                    <option value="242">Western Sahara</option>
+                    <option value="243">Suriname</option>
+                    <option value="244">Svalbard and Jan</option>
+                    <option value="245">Swaziland</option>
+                    <option value="246">Sweden</option>
+                    <option value="247">Switzerland</option>
+                    <option value="248">Tajikistan</option>
+                    <option value="249">Thailand</option>
+                    <option value="250">Togo</option>
+                    <option value="251">Tokelau</option>
+                    <option value="252">Tonga</option>
+                    <option value="253">Trinidad and Tobago</option>
+                    <option value="254">Turkey</option>
+                    <option value="255">Turkmenistan</option>
+                    <option value="256">Turks and Caicos Islands</option>
+                    <option value="257">Tuvalu</option>
+                    <option value="258">Uganda</option>
+                    <option value="259">Ukraine</option>
+                    <option value="260">Macedonia</option>
+                    <option value="261">بريطانيا</option>
+                    <option value="262">Guernsey</option>
+                    <option value="263">Jersey</option>
+                    <option value="264">Isle of Man</option>
+                    <option value="265">Tanzania</option>
+                    <option value="266">United States</option>
+                    <option value="267">Virgin Islands</option>
+                    <option value="268">Burkina Faso</option>
+                    <option value="269">Uruguay</option>
+                    <option value="270">Uzbekistan</option>
+                    <option value="271">Venezuela</option>
+                    <option value="272">Wallis and Futuna</option>
+                    <option value="273">Samoa</option>
+                    <option value="274">Zambia</option>
+                    <option value="275">Côte d'Ivoire</option>
+                    <option value="276">Korea North Korea</option>
+                    <option value="277">Lao</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">العمر بين</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                    <option value="51">51</option>
+                    <option value="52">52</option>
+                    <option value="53">53</option>
+                    <option value="54">54</option>
+                    <option value="55">55</option>
+                    <option value="56">56</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                    <option value="59">59</option>
+                    <option value="60">60</option>
+                    <option value="61">61</option>
+                    <option value="62">62</option>
+                    <option value="63">63</option>
+                    <option value="64">64</option>
+                    <option value="65">65</option>
+                    <option value="66">66</option>
+                    <option value="67">67</option>
+                    <option value="68">68</option>
+                    <option value="69">69</option>
+                    <option value="70">70</option>
+                    <option value="71">71</option>
+                    <option value="72">72</option>
+                    <option value="73">73</option>
+                    <option value="74">74</option>
+                    <option value="75">75</option>
+                    <option value="76">76</option>
+                    <option value="77">77</option>
+                    <option value="78">78</option>
+                    <option value="79">79</option>
+                    <option value="80">80</option>
+                    <option value="81">81</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الطول</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">بين 130 و 150</option>
+                    <option value="2">بين 150 و 165</option>
+                    <option value="3">بين 165 و 190</option>
+                    <option value="4">أكثر من 190</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الوزن</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="0" selected="">الكل</option>
+                    <option value="40">أقل 40</option>
+                    <option value="60">أقل من 60</option>
+                    <option value="90">أقل من 90</option>
+                    <option value="110">أقل من 110</option>
+                    <option value="140">أقل من 140</option>
+                    <option value="180">أقل من 180</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">نوع الشعر</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">عادي</option>
+                    <option value="2">ناعم</option>
+                    <option value="3">مجعد</option>
+                    <option value="4">خشن</option>
+                    <option value="5">أصلع قليلا</option>
+                    <option value="6">أصلع</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">لون الشعر</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="0" selected="">الكل</option>
+                    <option value="1">أحمر</option>
+                    <option value="2">أسود</option>
+                    <option value="3">أسود داكن</option>
+                    <option value="4">أشقر</option>
+                    <option value="5">أشقر داكن</option>
+                    <option value="6">بني فاتح</option>
+                    <option value="7">بني داكن</option>
+                    <option value="8">رمادي</option>
+                    <option value="9">أبيض</option>
+                    <option value="10">غير ذلك</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">لون العيون</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">أسود</option>
+                    <option value="2">بني</option>
+                    <option value="3">أخضر</option>
+                    <option value="4">أزرق</option>
+                    <option value="5">رمادي</option>
+                    <option value="6">عسلي</option>
+                    <option value="7">غير ذلك</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">لون البشرة</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">أبيض</option>
+                    <option value="2">أسمر</option>
+                    <option value="3">قمحي</option>
+                    <option value="4">قمحي غامق</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الحالة الصحية</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">سليم</option>
+                    <option value="2">غير سليم</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">التدين</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">لست متدين</option>
+                    <option value="2">متدين قليلا</option>
+                    <option value="3">متدين</option>
+                    <option value="4">متدين كثيرا</option>
+                    <option value="5">أُفضل أن لا اقول</option>
+                  </select>
+                </div>
+                <!--  -->
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <form class="row row-cols-1 row-cols-md-3 row-in-row-2">
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الحجاب</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="0" selected="">الكل</option>
+                    <option value="1">محجبة (غطاء الوجه)</option>
+                    <option value="2">محجبة (النقاب)</option>
+                    <option value="3">محجبة (كشف الوجه)</option>
+                    <option value="4">لست محجبة</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1"
+                    >الإلتزام بالصلاة</label
+                  >
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">ملتزم</option>
+                    <option value="2">غير ملتزم</option>
+                    <option value="3">أُفضل أن لا اقول</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">التدخين</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">غير مدخن</option>
+                    <option value="2">مدخن</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1"
+                    >الإستماع للأغاني</label
+                  >
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">لا استمع لها</option>
+                    <option value="2">نعم استمع لها</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">المؤهل العلمي</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">غير دارس</option>
+                    <option value="2">دراسة متوسطة</option>
+                    <option value="3">دراسة ثانوية</option>
+                    <option value="4">دراسة جامعية</option>
+                    <option value="5">دكتوراه</option>
+                    <option value="6">دراسة ذاتية</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">مجال العمل</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">بدون عمل حاليا</option>
+                    <option value="2">لا زلت أدرس</option>
+                    <option value="3">مجال الفن / الأدب</option>
+                    <option value="4">الإدارة</option>
+                    <option value="5">مجال التجارة</option>
+                    <option value="6">مجال الأغذية</option>
+                    <option value="7">مجال الإنشاءات والبناء</option>
+                    <option value="8">مجال القانون</option>
+                    <option value="9">مجال الطب</option>
+                    <option value="10">السياسة / الحكومة</option>
+                    <option value="11">متقاعد</option>
+                    <option value="12">التسويق والمبيعات</option>
+                    <option value="13">صاحب عمل خاص</option>
+                    <option value="14">مجال الهندسة / العلوم</option>
+                    <option value="15">مجال الكمبيوتر أو المعلومات</option>
+                    <option value="16">شيء آخر</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الوضع المادي</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">فقير</option>
+                    <option value="2">أقل من المتوسط</option>
+                    <option value="3">متوسط</option>
+                    <option value="4">أكتر من المتوسط</option>
+                    <option value="5">جيد</option>
+                    <option value="6">ميسور</option>
+                    <option value="7">غني</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">الدخل السنوي</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">أقل من 8000 دولار</option>
+                    <option value="2">أقل من 25 الف دولار</option>
+                    <option value="3">أكتر من 25 الف دولار</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">يريد زواج</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">زواج اول</option>
+                    <option value="2">زواج ثاني</option>
+                    <option value="3">زواج ثالث</option>
+                    <option value="4">زواج رابع</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1"
+                    >نوع الزواج المرغوب</label
+                  >
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">زواج عادي</option>
+                    <option value="2">زواج مسيار</option>
+                    <option value="3">زواج تعدد</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1"
+                    >الحالة الإجتماعية</label
+                  >
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">عازب</option>
+                    <option value="2">متزوج</option>
+                    <option value="3">مطلق</option>
+                    <option value="4">أرمل</option>
+                  </select>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="text-right">
+                  <label for="exampleFormControlSelect1">إنجاب الأطفال</label>
+                </div>
+                <div>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">نعم</option>
+                    <option value="2">لا</option>
+                  </select>
+                </div>
+                <!--  -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-search mb-4 mt-4">
+        <button class="btn global-btn-1">
+          ابحث الان
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="onair-theme">
+      <div class="onair-content">
+        <input type="checkbox" id="switch" name="mode" />
+        <label for="switch" class="mt-2 label"></label>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Dark & Light Mode
+    var checkbox = document.querySelector("input[name=mode]");
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        trans();
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        trans();
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    });
+
+    let trans = () => {
+      document.documentElement.classList.add("transition");
+      window.setTimeout(() => {
+        document.documentElement.classList.remove("transition");
+      }, 1000);
+    };
+  </script>
+  <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(".btn-slid").click(function () {
+      $(this).toggleClass("click");
+      $(".slidbar-menu").toggleClass("show");
+    });
+  </script>
+</html>

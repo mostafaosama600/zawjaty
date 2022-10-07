@@ -1,0 +1,15 @@
+@use '../variables/color';
+@use '../variables/brdrs';
+@use '../variables/btns';
+
+.new-online-mwda{
+    background: var(--n-e-w-bg-2);
+    .card-title{
+        color: var(--n-e-w-color);
+    }
+    .form-control{
+        text-align: right;
+        color: var(--n-e-w-color);
+
+    }
+}

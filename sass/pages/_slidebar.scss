@@ -1,0 +1,103 @@
+@use '../variables/color';
+@use '../variables/btns';
+.btn-slid {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: left 0.4s ease-in-out;
+    z-index: 100000000;
+    border-radius: 3px;
+    background: transparent;
+    border: 0px;
+    padding: 2px 7px;
+}
+
+.btn-slid span {
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.btn-slid.click {
+    left: 260px;
+    transition: left 0.4s ease-in-out;
+    background: #fafafa;
+}
+
+.slidbar-menu.show {
+    left: 0px;
+    transition: left 0.4s ease-in-out;
+}
+.slidbar-menu {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    left: -250px;
+    background: var(--menu);
+    transition: left 0.4s ease-in-out;
+    z-index: 100000000;
+}
+
+.slider-navs {
+    ul {
+        margin-top: 56px;
+        // border-right: 1px solid var(--hover-menu-brder);
+        // border-top: 1px solid var(--hover-menu-brder);
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        position: static;
+    }
+    ul li {
+        line-height: 40px;
+        border-bottom: 1px solid var(--hover-menu-brder);
+        width: 100% !important;
+        text-align: right;
+    }
+    
+    ul li a {
+        color: #fff;
+        padding-right: 20px;
+        display: block;
+        width: 100% !important;
+        border-right: 3px solid transparent;
+
+        &:hover {
+            background-color: var(--hover-menu);
+            border-right-color: var(--hover-menu-brder);
+        }
+    }
+}
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .btn-slid {
+        position: absolute;
+        left: 15px;
+        cursor: pointer;
+        text-align: center;
+        transition: left 0.4s ease-in-out;
+        z-index: 100000000;
+        background: #c6cbef;
+        border: 0px;
+        padding: 2px 7px;
+    }
+}
+@media screen and (max-width: $breakpoint-tablet) {
+    .btn-slid {
+        position: absolute;
+        left: 15px;
+        cursor: pointer;
+        text-align: center;
+        transition: left 0.4s ease-in-out;
+        z-index: 100000000;
+        background: #c6cbef;
+        border: 0px;
+        padding: 2px 7px;
+    }
+}

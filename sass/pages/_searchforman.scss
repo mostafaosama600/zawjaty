@@ -1,0 +1,24 @@
+@use '../variables/color';
+@use '../variables/btns';
+.search-for-man{
+    h5{
+        color: var(--n-e-w-color);
+    }
+    .fa-search {
+        margin-left: 20px;
+        color: var(--n-e-w-color);
+    }
+    .row{
+        background: var(--n-e-w-bg-2);
+    }
+    .row-in-row-2{
+        gap: 30px;
+    }
+    label,.form-control{
+        color: var(--n-e-w-color-3) !important;
+    }
+    .box-search{
+        text-align: right;
+        margin-right: -15px;
+    }
+}

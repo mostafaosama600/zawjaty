@@ -1,0 +1,19 @@
+@use '../variables/color';
+@use '../variables/btns';
+.layout-search{
+    background: var(--color-1);
+    background: var(--n-e-w-bg-2);
+    h2{
+        color: var(--color-text-3);
+    }
+    .male-box, .female-box{
+        width: 100%;
+        padding: 30px;
+    }
+    .male-box img{
+        width: 25%;
+    }
+    .female-box img{
+        width: 25%;
+    }
+}

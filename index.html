@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>زوجتي</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"> زوجتي </a>
+      <div style="display: flex; justify-content: space-between">
+        <div class="dropdown navbar-toggler ml-5">
+          <a class="dropdown-toggle navbar-brand" data-toggle="dropdown">
+            <i class="fas fa-user-circle"></i>
+          </a>
+          <div class="dropdown-menu text-right">
+            <a class="dropdown-item" href="">الرسائل</a>
+            <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item"
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModalNotification"
+              href="javascript:void(0)"
+              >الاشعارات</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="">تسجيل الخروج</a>
+          </div>
+        </div>
+
+        <button class="btn-slid navbar-brand" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupsportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>
+              الرئيسية
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">
+              <i class="fas fa-search"></i>
+              البحث
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user-circle"></i>
+            </a>
+            <div class="dropdown-menu text-right">
+              <a class="dropdown-item" href="">الرسائل</a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalNotification"
+                href="javascript:void(0)"
+                >الاشعارات</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void(0)"
+                >تسجيل الخروج</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a>
+              <input type="checkbox" id="switch" name="mode" />
+              <label for="switch" class="mt-2 label"></label>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html">
+              <i class="fas fa-user-plus"></i>
+              تسجيل / دخول
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="slidbar-menu slider-navs">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-edit"></i>
+            تعديل بياناتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-camera"></i>
+            الصورة الشخصية
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-share-alt"></i>
+            وسائل التواصل خارج الموقع
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upgrade.html">
+            <i class="fas ml-2 fa-money-check-alt"></i>
+            ترقية عضويتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favusers.html">
+            <i class="fas ml-2 fa-heart"></i>
+            الأعضاء المعجب بهم
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="userslikesme.html">
+            <i class="fas ml-2 fa-grin-hearts"></i>
+            الأعضاء المعجبين بصفحتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usersvisitme.html">
+            <i class="fas ml-2 fa-eye"></i>
+            اعضاء زارو صفحتي
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ban.html">
+            <i class="fas ml-2 fa-ban"></i>
+            الأعضاء المحجوبين
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="fas ml-2 fa-dove"></i>
+            سجل قصتي الناجحة
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid mb-5">
+      <div class="skewed"></div>
+      <div class="row row-cols-1 row-cols-md-2 section-hero">
+        <div class="col mb-4 section-hero-box-left">
+          <div class="card">
+            <h1 class="card-title">
+              زوجتي
+              <br />
+              للزواج الإسلامي
+              <br />
+              نبحث لك عن نصفك الآخر
+            </h1>
+            <q>
+              وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+              لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ
+              إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+            </q>
+          </div>
+        </div>
+        <div class="col mb-4 section-hero-box-right">
+          <div class="card">
+            <div class="card-body">
+              <form class="p-3">
+                <h5 class="card-title">عن ماذا تبحث ؟</h5>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label
+                    class="form-check-label mr-3 ml-3"
+                    for="exampleRadios1"
+                  >
+                    أريد ذكر
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios2"
+                    value="option2"
+                  />
+                  <label class="form-check-label mr-3" for="exampleRadios2">
+                    أريد أنثى
+                  </label>
+                </div>
+                <hr class="hr-line" />
+                <h5 class="card-title">العمر بين</h5>
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label
+                        for="exampleFormControlSelect1"
+                        class="new-label-fay"
+                        >من عام</label
+                      >
+                      <select class="form-control input-age">
+                        <option value="18">18</option>
+                        <option value="23" selected="">23</option>
+                        <option value="28">28</option>
+                        <option value="33">33</option>
+                        <option value="38">38</option>
+                        <option value="43">43</option>
+                        <option value="48">48</option>
+                        <option value="53">53</option>
+                        <option value="58">58</option>
+                        <option value="63">63</option>
+                        <option value="68">68</option>
+                        <option value="73">73</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label
+                        for="exampleFormControlSelect2"
+                        class="new-label-fay"
+                        >الي عام</label
+                      >
+                      <select class="form-control input-age">
+                        <option value="20">20</option>
+                        <option value="27">27</option>
+                        <option value="34">34</option>
+                        <option value="41">41</option>
+                        <option value="48" selected="">48</option>
+                        <option value="55">55</option>
+                        <option value="62">62</option>
+                        <option value="69">69</option>
+                        <option value="76">76</option>
+                        <option value="83">83</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-right mt-3">
+                  <button class="btn w-25 img-w-res global-btn-fa">
+                    ابحث الان
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container Xumbotron-be-one-ofus">
+      <div class="row">
+        <div class="jumbotron mt-5 mb-5 text-center">
+          <h3 class="card-title">إشترك الان</h3>
+          <p class="card-text text-p">
+            زوجتي هو موقع زواج عربي إسلامي يتيح لجميع الاعضاء التسجيل مجانا، وهو
+            للزواج فقط ولا مجال للتعارف أو للصداقة أو غيرها فسياسة الموقع قائمة
+            على تعاليم الدين الإسلامي
+          </p>
+          <a href="signin.html" class="btn global-btn-3 btn-md">
+            إشترك الان
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainss mt-5">
+      <div class="text-right mr-5 mt-4 mb-4">
+        <h5 class="friends text-right">
+          ابرز المشتركين
+          <div class="brdr-text-footer-5"></div>
+        </h5>
+      </div>
+      <div class="slide-container">
+        <img id="slide-left" class="arrow" src="imgs/next.png" />
+        <div class="container-fluid parent-box" id="slider">
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <img id="slide-right" class="arrow" src="imgs/left-arrow.png" />
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <svg
+        class="svg-homepage"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          class="path-home"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="row row-cols-2 new-quick-links-55 row-cols-md-4">
+        <div class="col mb-1 mt-1">
+          <a href="onlinenow.html">
+            <div class="card">
+              <div class="text-center">
+                <img
+                  src="imgs/onlinenow.svg"
+                  class="card-img-top w-75"
+                  alt="onlinenow"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">متواجدون الان</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col mb-1 mt-1">
+          <a href="storylove.html">
+            <div class="card">
+              <div class="text-center">
+                <img
+                  src="imgs/storyloves.svg"
+                  class="card-img-top w-75"
+                  alt="storyloves"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">قصص النجاح</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col mb-1 mt-1">
+          <a href="newmen.html">
+            <div class="card">
+              <div class="text-center">
+                <img
+                  src="imgs/newus.svg"
+                  class="card-img-top w-75"
+                  alt="newusers"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">أعضاء جدد</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col mb-1 mt-1">
+          <a href="signin.html">
+            <div class="card">
+              <div class="text-center">
+                <img
+                  src="imgs/beoneofus.svg"
+                  class="card-img-top w-75"
+                  alt="beoneofus"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">إشترك مجانا</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainss mt-5 mb-5">
+      <div class="text-right mr-5 mt-5 mb-4">
+        <h5 class="friends text-right">
+          آخر الأعضاء دخولا
+
+          <div class="brdr-text-footer-5"></div>
+        </h5>
+      </div>
+      <div class="slide-container">
+        <img id="slide-left" class="arrow" src="imgs/next.png" />
+        <div class="container-fluid parent-box" id="slider">
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="col mb-4 text-center">
+              <a href="user.html">
+                <div class="card px-4" style="border-radius: 5px">
+                  <div class="card-body">
+                    <div>
+                      <img src="imgs/person.jpg" class="w-100" alt="..." />
+                    </div>
+                    <h5 class="card-title">رندا رودي</h5>
+                    <p>33 عام</p>
+                    <!-- <button class="btn btn-2 w-100">see</button> -->
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <img id="slide-right" class="arrow" src="imgs/left-arrow.png" />
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-4 border-top border-bottom footer">
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title name-website">زوجتي</h5>
+              <p class="card-text about-us-text">
+                نرتقي بك لتكون الإستثناء الجميل وسط زحام المنافسين. بإبداعٍ ..
+              </p>
+              <ul class="social-media">
+                <li>
+                  <a href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://accounts.snapchat.com/"
+                    ><i class="fab fa-snapchat-ghost"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://web.whatsapp.com/"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                الدخول
+                <div class="brdr-text-footer-0"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="aboutzawjaty.html">من نحن ؟</a></li>
+              <li><a href="signin.html">دخول / تسجيل</a></li>
+              <li><a href="search.html">البحث المتقدم</a></li>
+              <li><a href="storylove.html">قصص ناجحة</a></li>
+              <li><a href="articles.html">المقالات</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                البحث المتقدم
+                <div class="brdr-text-footer"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="policy.html">سياسة الخصوصية</a></li>
+              <li><a href="contactus.html">تحتاج مساعدة ؟</a></li>
+              <li><a href="onlinenow.html">المتواجدين الأن</a></li>
+              <li><a href="newwoman.html">جديد الإناث المسجلين</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title quick-link">
+                روابط سريعة
+                <div class="brdr-text-footer-2"></div>
+              </h5>
+            </div>
+            <ul class="list-footer">
+              <li><a href="newmen.html">جديد الذكور المسجلين</a></li>
+              <li><a href="msyarwoman.html">نساء يطلبن زواج المسيار</a></li>
+              <li><a href="polygamywoman.html">نساء يطلبن زواج التعدد</a></li>
+              <li><a href="normalmarriage.html">زواج عادي</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 copy-footer">
+        <div class="col box-right">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li><img src="imgs/master.png" alt="master" /></li>
+                <li><img src="imgs/visa.png" alt="visa" /></li>
+                <li>
+                  <img src="imgs/paypal.png" class="paypal" alt="paypal" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col box-left">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                جميع الحقوق محفوظة للافانا &copy; 2022
+                <img src="imgs/paypal.png" width="60" alt="paypal" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="onair-theme">
+      <div class="onair-content">
+        <input type="checkbox" id="switch" name="mode" />
+        <label for="switch" class="mt-2 label"></label>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Dark & Light Mode
+    var checkbox = document.querySelector("input[name=mode]");
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        trans();
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        trans();
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    });
+
+    let trans = () => {
+      document.documentElement.classList.add("transition");
+      window.setTimeout(() => {
+        document.documentElement.classList.remove("transition");
+      }, 1000);
+    };
+  </script>
+  <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+  <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(".btn-slid").click(function () {
+      $(this).toggleClass("click");
+      $(".slidbar-menu").toggleClass("show");
+    });
+  </script>
+</html>

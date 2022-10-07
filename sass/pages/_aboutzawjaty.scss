@@ -1,0 +1,71 @@
+@use '../variables/color';
+@use '../variables/brdrs';
+@use '../variables/btns';
+
+
+.jumbotron-box-lg{
+    background-color: var(--n-e-w-bg-1);
+    h4{
+        color: var(--n-e-w-color);
+    }
+    .box-1-jumb{
+        p{
+            width: 75%;
+            line-height: 30px;
+            color: var(--n-e-w-color-1);
+            font-weight: bold;
+        }
+    }
+    .box-2-jumb{
+        p{
+            width: 75%;
+            line-height: 30px;
+            color: var(--n-e-w-color-1);
+            font-weight: bold;
+        }
+    }
+    .jumb-title-19 {
+        color: var(--n-e-w-color) !important;
+        font-weight: bold;
+    }
+    hr{
+        background: var(--n-e-w-color);
+    }
+    .box-1-jumb{
+        color: var(--n-e-w-color-1);
+    }
+    .txt-ju-ju{
+        color: var(--n-e-w-color);
+    }
+}
+.becare-ofurself {
+    text-align: left;
+
+    font-weight: bold;
+    quotes: "«""»""‹""›";
+    color: var(--color-cd-0);
+}
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .jumbotron-box-lg {
+            .box-1-jumb {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .box-2-jumb {
+                p {
+                    width: 100%;
+                }
+            }
+    }
+    .becare-ofurself {
+        text-align: center;
+        background-color: var(--color-bg-jumbtron);
+        padding: 10px 15px;
+        border-radius: 4px;
+    }
+}

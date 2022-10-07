@@ -1,0 +1,194 @@
+// import global rules
+@use './layout/gloubal';
+// import pages
+// navbar & footer
+@use './pages/navbar';
+@use './pages/index';
+@use './pages/user';
+@use './pages//upgrade';
+@use './pages/search';
+@use './pages/searchforman';
+@use './pages/getresult';
+@use './pages/policy';
+@use './pages/favusers';
+@use './pages/payment';
+@use './pages/slidebar';
+@use './pages/articles';
+@use './pages/aboutzawjaty';
+@use './pages/onlinenow';
+// import color
+@use './variables/btns';
+@use './variables/color' as *;
+
+.data-story-succ{
+    color: #da4761;
+}
+.scroll-text{
+    overflow: scroll;
+    height: 100px;
+    cursor: all-scroll;
+}
+.scroll-text::-webkit-scrollbar {
+    display: none;
+}
+.textarea-contact{
+    height: 100px !important;
+}
+.small-txt-popup{
+    color: #494CA2;
+}
+.contact-form input,textarea{
+    border-radius: 0px !important;
+}
+.form-g-sigin label{
+    color: var(--n-e-w-color-1) !important;
+}
+.form-g-sigin input,select{
+    background-color: var(--color-5) !important;
+}
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
+.modal-content{
+    margin-top: 80px !important;
+}
+.didufrgtpass:hover{
+    color:  var(--color-text); 
+}
+.didufrgtpass{
+    color:  var(--color-text); 
+    font-size: 14px; 
+    text-decoration: underline
+}
+.ifufrgtpass{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center;
+
+}
+.form-create-new-pass{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shshs {
+    color: var(--n-e-w-color);
+}
+.onair-theme {
+    display: none;
+}
+
+
+.onair-content {
+    display: none;
+}
+.warda-center {
+    .card-body {
+        color: var(--n-e-w-color-1);
+    }
+}
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 900px;
+@media screen and (max-width: $breakpoint-mobile) {
+    .box-sign-login-res{
+        a{
+            width: 100% !important;
+        }
+    }
+    .box-sign-res{
+        a{
+            width: 50% !important;
+        }
+    }
+    .nav-txt-login{
+        font-size: 14px;
+    }
+    .shshs {
+        color: #da4761;
+        font-size: 14px;
+    }
+    .onair-theme {
+        display: block !important;
+        position: fixed !important;
+        bottom: 10px !important;
+        right: 5px !important;
+        padding: 3px 6px;
+        border-radius: 10px;
+
+    }
+    
+    .onair-content {
+        display: block !important;
+        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+    }
+    .warda-145{
+        display: none;
+    }
+    .warda-center {
+        .card-body {
+            background: var(--n-e-w-wave);
+            color: #494CA2;
+            border-radius: 4px;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-tablet) {
+    .onair-theme {
+        display: block !important;
+        position: fixed !important;
+        bottom: 10px !important;
+        right: 5px !important;
+        padding: 3px 6px;
+        border-radius: 10px;
+
+    }
+
+    .onair-content {
+        display: block !important;
+        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+    }
+}
+details {
+    border-radius: 4px;
+    padding: .5em 0em 0;
+    transition: 0.5s ease;
+    p{
+        font-size: 14px;
+    }
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+.details-sp{
+    color: var(--n-e-w-color);
+}
+details[open] {
+    transition: 0.5s ease;
+}
+details[open] summary {
+    color: var(--n-e-w-color);
+    transition: 0.5s ease;
+    border-bottom: 1px solid var(--n-e-w-color);
+    margin-bottom: .5em;
+}
+
+// .card{
+//     background-color: transparent !important;
+// }
+.warddddd{
+    background-color: var(--n-e-w-bg-1);
+}

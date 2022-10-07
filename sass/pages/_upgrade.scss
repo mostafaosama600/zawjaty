@@ -1,0 +1,89 @@
+@use '../variables/color';
+@use '../variables/btns';
+
+.upgrade-cards {
+  .card {
+    background: var(--color-3-upgrade);
+  }
+
+  .box-shadow-card1,
+  .box-shadow-card2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .card-body ul {
+    text-align: right;
+  }
+  .card-body ul li {
+    margin: 8px 0px;
+  }
+  .card-body .card-title {
+    color: #c6cbef;
+    font-weight: bold;
+    border: 1px solid #c6cbef;
+    padding: 5px 0px;
+  }
+  .deal-offer-time {
+    transform: scale(1.08);
+    position: relative;
+    background-color: #da4761;
+    .upgrade-offer-card {
+      position: absolute;
+      background: #c6cbef;
+      width: 25%;
+      height: 13.5%;
+      top: 0px;
+      border-top-right-radius: 0.25rem;
+      border-color:#c6cbef;
+      right: 0px;
+      text-align: center;
+    }
+    .upgrade-offer-card .fa-dollar-sign {
+        width: 100%;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%);
+      color: goldenrod;
+      animation: name-of-animation 5s infinite;
+      font-size: 20px;
+    }
+    @keyframes name-of-animation {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+
+      80% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+.row-bg-up-to-icons{
+  margin-top: -22px;
+}
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+    
+@media screen and (max-width: $breakpoint-mobile) {
+  .deal-offer-time {
+      transform: scale(1) !important;
+  }
+  .row-bg-up-to-icons {
+    margin-top: -22px;
+  }
+      
+}

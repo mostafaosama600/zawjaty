@@ -1,0 +1,44 @@
+@use '../variables/color';
+@use '../variables/brdrs';
+@use '../variables/btns';
+
+
+.new-bgs{
+    background-color: var(--n-e-w-bg-1);
+}
+.title-article{
+    color: var(--n-e-w-color);
+}
+.box-articles-new-subjects{
+    height: 280px;
+    .card-body{
+        position: relative;
+        p{
+            line-height: 30px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: var(--n-e-w-color-1);
+            font-weight: bold;
+        }
+        .box-inbox{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+    .see-more-btnz{
+        border-radius: 0px;
+        background-color: #da4761;
+        padding: 3px 10px;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+        color: #fff;
+    }
+    .datas-art{
+        width: fit-content;
+        margin: 20px 0px;
+    }
+}

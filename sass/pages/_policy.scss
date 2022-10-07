@@ -1,0 +1,69 @@
+@use '../variables/color';
+@use '../variables/brdrs';
+@use '../variables/btns';
+
+.title-article{
+    color: #da4761;
+}
+.name-article{
+    color: #da4761;
+    font-weight: bolder;
+}
+.text-article{
+    color: var(--color-text);
+    margin: 15px 0px;
+    font-size: 14px;
+}
+.section-intro-privecy{
+    background: linear-gradient(123deg, var(--nav-coloring-2) 0%, var(--nav-coloring-1) 67%),
+    linear-gradient(180deg, var(--nav-coloring-3) 0%, var(--nav-coloring-1) 100%),
+    linear-gradient(142deg, var(--nav-coloring-3) 0%, var(--nav-coloring-3) 33%, var(--nav-coloring-2) calc(33% + 1px), var(--nav-coloring-2) 56%, var(--nav-coloring-4) calc(56% + 1px), var(--nav-coloring-4) 62%, var(--nav-coloring-1) calc(62% + 1px), var(--nav-coloring-1) 100%);
+    background-blend-mode: multiply, overlay, normal;
+    border-top: 1px solid var(--brder-row);
+    border-bottom: 1px solid var(--brder-row);
+    .row-privecy{
+        position: relative;
+        width: 100%;
+        height: 280px;
+    }
+    .col-privecy{
+        position: absolute;
+        bottom: -57px;
+    }
+    h3{
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        color: #fafafa;
+        text-shadow: 1px 1px #fafafa;
+    }
+    .col-privecy img{
+        bottom: 0px;
+        width: 35%;
+    }
+    $breakpoint-mobile: 600px;
+    $breakpoint-tablet: 768px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        .row-privecy {
+            position: relative;
+            width: 100%;
+            height: 170px;
+        }
+
+        .col-privecy img {
+            bottom: 0px;
+            width: 50%;
+        }
+
+        h3 {
+            font-size: 14px;
+            left: -10px;
+        }
+    }
+}
+.txt-ju-ju-2{
+    color: #da4761;
+}
+.policy-sjsj{
+    background-color: var(--n-e-w-bg-1);
+}

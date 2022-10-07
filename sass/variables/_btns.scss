@@ -1,0 +1,113 @@
+/*! handling BTNS*/
+.global-btn-1{
+    background-color: #FF6584;
+    color: #fff;
+    border-radius: 0px;
+    border: 1px solid #FF6584;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: rgb(255, 101, 132 , 0.5);
+        color: #fff;
+        font-weight: bold;
+        margin-right: 0px !important;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover i{
+        color: #FF6584;
+        margin-right: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    i{
+        transition: 0.3s ease-in-out;
+    }
+}
+.global-btn-2{
+    background-color: #D2001A;
+    color: #fff;
+    border-radius: 0px;
+    border: 1px solid #D2001A;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: rgba(210, 0, 0, 0.15);
+        color: #D2001A;
+        font-weight: bold;
+        margin-right: 0px !important;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover i{
+        color: #D2001A;
+        margin-right: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    i{
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.global-btn-3 {
+    border-radius: 0px;
+    background-color: rgb(255, 101, 132, 0.5);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    
+    &:hover {
+        border: 1px solid #FF6584;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 0px !important;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover i {
+        color: #FF6584;
+        margin-right: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    i {
+        transition: 0.3s ease-in-out;
+    }
+}
+.global-btn-4 {
+    border-radius: 0px;
+    background-color: #C6CBEF;
+    font-weight: bold;
+    color: #225cb2;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    border: 0px !important;
+    &:hover {
+        color: #FF6584;
+        border: 0px !important;
+        font-weight: bold;
+        letter-spacing: 4px;
+        transition: 0.3s ease-in-out;
+    }
+}
+.global-btn-fa {
+    border-radius: 0px;
+    background-color: #1A1C86 !important;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: #fafafa;
+    
+    &:hover {
+        color: #fff;
+        font-weight: bold;
+        margin-right: 0px !important;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover i {
+        color: #225cb2;
+        margin-right: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    i {
+        transition: 0.3s ease-in-out;
+    }
+}
